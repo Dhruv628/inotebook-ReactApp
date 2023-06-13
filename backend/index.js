@@ -16,9 +16,9 @@ app.use('/api/notes',require('./routes/notes'))
 //Step 3: Render
 if (process.env.NODE_ENV === 'production') {
     //*Set static folder up in production
-    app.use(express.static('Client/build'));
+    app.use(express.static('client/build'));
 
-    app.get('*', (req,res) => res.sendFile(path.resolve(__dirname, 'Client', 'build','index.html')));
+    app.get('*', (req,res) => res.sendFile(path.resolve(__dirname, 'client', 'build','index.html')));
   }
 
 app.listen(port,()=>{
