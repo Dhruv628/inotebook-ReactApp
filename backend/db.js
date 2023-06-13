@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-const mongoURL = process.env.MY_MONGO_URI
+const mongoURL ='mongodb+srv://sharmaaniket682:3ufroaG31zohLNDJ@cluster0.nkzorwo.mongodb.net/?retryWrites=true&w=majority'
 async function connectToMongo() {
-    mongoose.connect(`${mongoURL}`).then(
+    mongoose.connect(mongoURL).then(
         (data)=>{
             console.log(`Mongodb connected successfully `)
         }

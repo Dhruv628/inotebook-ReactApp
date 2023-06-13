@@ -71,12 +71,12 @@ export default function Navbar(props) {
         </li>
         {localStorage.getItem('token')? <li className="nav-item dropdown " style={{zIndex:'0'}}>
           <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" onClick={handlTheCLick} role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="fa-regular fa-user mx-1"></i> Account
+          <i className="fa-regular fa-user mx-1"></i> Account
           </Link>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
             <li className="dropdown-item"> {localStorage.getItem('token')?userData.name:''}</li>
             <li className="dropdown-item">{localStorage.getItem('token')?userData.email:''}</li>
-            {localStorage.getItem('token')?<button className="dropdown-item fw-bolder" onClick={handleLogout} type="submit"   ><i class="mx-1 fa-solid fa-right-from-bracket"></i>Log out</button>:null}
+            {localStorage.getItem('token')?<button className="dropdown-item fw-bolder" onClick={handleLogout} type="submit"   ><i className="mx-1 fa-solid fa-right-from-bracket"></i>Log out</button>:null}
          </ul>
         </li>:null}
       </ul>
