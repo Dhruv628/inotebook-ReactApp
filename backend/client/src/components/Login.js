@@ -61,7 +61,7 @@ export const  Login =  (props) => {
   </div>
   <button type="submit" className="btn btn-success" >Login</button>
 </form>
-   
+   <div className='my-3'>New to iNotebook ? <Link to="/signup">Signup</Link></div>
     </div>
     </>
   )
