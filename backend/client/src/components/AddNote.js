@@ -4,7 +4,7 @@ import noteContext from '../context/note/noteContext'
 export const AddNote = (props) => {
     const context = useContext(noteContext)
     const {notes,setNotes}=context
-    const host='http://localhost:5000'
+    const host=''
   //Function to Add note
   const addNote =async (title, description, tag ) => {
     // API call
