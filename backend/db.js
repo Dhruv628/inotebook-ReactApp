@@ -1,7 +1,5 @@
 const mongoose = require('mongoose')
 const mongoURL ="mongodb+srv://sharmaaniketpubg:2eaBL274BwmecrZE@cluster0.zeewoam.mongodb.net/"
-
-const hi='hi'
 async function connectToMongo() {
     mongoose.connect(mongoURL).then(
         (data)=>{
