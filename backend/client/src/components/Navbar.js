@@ -16,7 +16,7 @@ export default function Navbar(props) {
     if(localStorage.getItem('token')){
       const getUserData = async () => {
         try {
-          const response = await fetch(`http://localhost:5000/api/auth/getuser`, {
+          const response = await fetch(`/api/auth/getuser`, {
             method: "GET", 
           headers: {
               'Content-Type': 'application/json',
