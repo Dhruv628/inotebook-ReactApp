@@ -4,7 +4,7 @@ import noteContext from '../context/note/noteContext'
 export const NoteItem = (props) => {
     const context = useContext(noteContext)
     const {notes, setNotes} = context;
-    const host ="http://localhost:5000"
+    const host =""
     const {note,updateNote}=props;
     // Delete a note
 const deleteNote =async (id) => {
