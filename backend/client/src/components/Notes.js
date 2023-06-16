@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom'
 export const Notes = (props) => {
     const context = useContext(noteContext)
     const {notes, setNotes} = context;
-    const host='http://localhost:5000';
+    const host='';
     const {showAlert} = props;
     let navigate=useNavigate();
     
